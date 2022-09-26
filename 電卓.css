@@ -1,0 +1,76 @@
+/*電卓全体の装飾*/
+table{
+    /*電卓の大きさ*/
+    width: 300px;
+    height: 400px;
+    /*電卓のふちをグレーにする*/
+    border: 2px solid gray;
+    /*電卓の角を丸くする*/
+    border-radius: 10px;
+    /*余白を作る*/
+    padding: 6px;
+    margin: 15px;
+}
+/*計算結果表示画面の装飾*/
+input{
+    /*ディスプレイの大きさ*/
+    width: 325px;
+    height: 70px;
+    /*右詰めにする*/
+    text-align: right;
+    /*角に丸みを付ける*/
+    border-radius: 5px;
+    /*文字の大きさの調整*/
+    font-size: x-large;
+}
+/*ボタンの装飾*/
+button{
+    /*ボタンの大きさ*/
+    width: 80px;
+    height: 80px;
+    /*ボタンの文字を大きくする*/
+    font-size: large;
+    /*ボタンに丸みを付け、ふちをなくす*/
+    border-radius: 30px;
+    border: none;   
+}
+/*0ボタンの大きさ*/
+.zero {
+    width: 160px;
+    height: 80px;
+}
+/*演算子ボタンの色*/
+.calc {
+    background-color: sandybrown;
+}
+/*ACボタンと±ボタンと%ボタンの色*/
+.option{
+    background-color: silver;
+}
+
+/*カーソルを乗せたときに色を濃くする*/
+button:hover{
+    background: silver;
+}
+.calc:hover{
+    background: orange;
+}
+.option:hover{
+    background: darkgray;
+}
+
+/*クリックしたときに色を濃くする*/
+button:active{
+    background: gray;
+}
+.calc:active{
+    background: darkorange;
+}
+.option:active{
+    background: dimgray;
+}
+
+
+
+
+
