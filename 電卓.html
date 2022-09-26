@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>mission5-1</title>
+    <link rel="stylesheet" href="./mission5-1.css">
+</head>
+<body>
+    <table>
+        <!--計算結果表示画面-->
+        <tr>
+            <td colspan="4">
+                <input type="text" id="display" value="0" disabled>
+            </td>
+        </tr>
+
+        <!--ボタン1段目-->
+        <tr>
+            <td><button class="option" onclick="update()">AC</button></td>
+            <td><button class="option" onclick="plusminus()">±</button></td>
+            <td><button class="option" onclick="percent()">%</button></td>
+            <td><button class="calc" onclick="sym('÷')">÷</button></td> 
+        </tr>
+
+       <!--ボタン2段目-->
+        <tr>
+            <td><button onclick="copy('7')">7</button></td>
+            <td><button onclick="copy('8')">8</button></td>
+            <td><button onclick="copy('9')">9</button></td>
+            <td><button class="calc" onclick="sym('×')">×</button></td>
+        </tr>
+    
+        <!--ボタン3段目-->
+        <tr>
+            <td><button onclick="copy('4')">4</button></td>
+            <td><button onclick="copy('5')">5</button></td>
+            <td><button onclick="copy('6')">6</button></td>
+            <td><button class="calc" onclick="sym('-')">-</button></td>
+        </tr>
+    
+        <!--ボタン4段目-->
+        <tr>
+            <td><button onclick="copy('1')">1</button></td>
+            <td><button onclick="copy('2')">2</button></td>
+            <td><button onclick="copy('3')">3</button></td>
+            <td><button class="calc" onclick="sym('+')">+</button></td>
+        </tr>
+    
+        <!--5段目-->
+        <tr>
+            <td colspan="2"><button class="zero" onclick="copy('0')">0</button></td>
+            <td><button onclick="priod()">.</button></td>
+            <td><button class="calc" onclick="calc()">=</button></td>
+        </tr>
+    </table>
+
+    <script src="mission5-1.js"></script>
+</body>
+</html>
